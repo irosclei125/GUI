@@ -1,0 +1,124 @@
+local Atlas = loadstring(game:HttpGet("https://siegehub.net/Atlas.lua"))()
+local UI = Atlas.new({
+    Name = "Gato's GUI";
+    ConfigFolder = "Gato's GUI";
+    Credit = "Made By RoadToGlory";
+    Color = Color3.fromRGB(128,0,128);
+    Bind = "LeftControl";
+    UseLoader = true;
+    FullName = "My Script Hub";
+    CheckKey = function(inputtedKey)
+        return inputtedKey=="gato"
+    end;
+    Discord = "https://discord.gg/4UvtxQZaqP";
+})
+
+UI:SetToggle("v")
+
+local MyPage = UI:CreatePage("Teleports") -- creates a page
+local FpsBoost = UI:CreatePage("UseFul Commands") -- creates a page
+local MySection = MyPage:CreateSection("My Section")
+local FpsBoost = FpsBoost:CreateSection("FPS Helper")
+
+
+MySection:CreateButton({
+    Name = "Bank"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-373.528656, 21.2499943, -339.591827, -0.997171938, 2.09123883e-08, 0.0751541108, 1.35648186e-08, 1, -9.82771553e-08, -0.0751541108, -9.69797682e-08, -0.997171938)
+    end
+})
+
+MySection:CreateButton({
+    Name = "Admin"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-872.013306, -32.6567497, -647.572388, 0.999989927, 0, 0.00448873406, 0, 1, 0, -0.00448873406, 0, 0.999989927)
+    end
+})
+
+MySection:CreateButton({
+    Name = "Train"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(596.993469, 48.0007324, -112.001709, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end
+})
+
+MySection:CreateButton({
+    Name = "Club"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-265.996246, 0.0312504768, -423.998657, -0.999235511, 0, -0.0390964001, 0, 1, 0, 0.0390964001, 0, -0.999235511)
+    end
+})
+
+MySection:CreateButton({
+    Name = "Basket"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-932.998596, 22.0940876, -483.007385, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end
+})
+
+MySection:CreateButton({
+    Name = "Jail"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-304.754639, 22.5003433, 10.2345314, 0.998416185, 0, 0.0562596656, 0, 1, 0, -0.0562596656, 0, 0.998416185)
+    end
+})
+
+FpsBoost:CreateButton({
+    Name = "Ultra low gfx For controller"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        loadstring(game:HttpGet('https://pastebin.com/raw/MAsHs6bB'))()
+    end
+})
+
+
+FpsBoost:CreateButton({
+    Name = "Low GFX For Controller"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/irosclei125/test/main/test'))()
+    end
+})
+
+
+FpsBoost:CreateButton({
+    Name = "Admin Fly"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        loadstring(game:HttpGet('https://pastebin.com/raw/vME5KmE8'))()
+    end
+})
+
+FpsBoost:CreateButton({
+    Name = "Swag Crasher"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+    end
+})
+
+FpsBoost:CreateButton({
+    Name = "Cash Counter"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Crostide/Counter/main/Cash'))()
+    end
+})
+
+
+FpsBoost:CreateButton({
+    Name = "Crostides GUI | Must be in group to use"; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Crostide/cdhc/main/gui'))()
+    end
+})
+
+
+
+
+FpsBoost:CreateButton({
+    Name = "Cash Aura "; -- required: name of element
+    Callback = function() -- required: function to be called when button is pressed
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/irosclei125/aura/main/aura'))()
+    end
+})
+
+
+
+
+
